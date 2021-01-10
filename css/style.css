@@ -1,4 +1,4 @@
-/*ambiente desktop */
+/* versão mobile */
 
 body{
     position: absolute;
@@ -9,18 +9,41 @@ body{
 
 /* navbar */
 .navbar{
-position: fixed;
-background-color:green;
-width: 100%;
-height: 5%;
-text-align: center;
-
-
+    background-color:rgb(29, 27, 27);
+    color:rgb(160, 158, 158);
 }
 
 .navbar a{
-    color: black;
-    padding: 10px;
-    font-size: 20px;
-    
+    padding: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: rgb(160, 158, 158);
+}
+
+.navbar a:visited, .navbar a:active, .navbar a:link{
+    color: white;
+} 
+
+/* Fim navbar */
+
+
+/* Footer */
+
+.footer{
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: rgb(29, 27, 27);
+ color: rgb(160, 158, 158);
+ text-align: center;
+}
+
+.footer a:visited, .footer a:active, .footer a:link {
+    color: rgb(160, 158, 158);
+    font-style: normal;
 }
