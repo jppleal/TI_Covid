@@ -25,7 +25,7 @@
 <body>
     <div class="banner">
         <h1>Covid-19 Portal</h1>
-        <a class="icon" >
+        <a class="icon">
             <i class="fas fa-bars"></i>
         </a>
     </div>
@@ -44,23 +44,36 @@
         <h4>Preencha o formulário em baixo.</h4>
         <form action="mailto:your.data@covid19.com">
             <fieldset>
-            <h3>Dados necessários:</h3>
+                <h3>Receba os dados no seu e-mail.</h3>
+                <br>
+                <!-- desnecessário (???) 
+                <label for="nome_id">Nome:</label>
+                <input type="text" name="nome" id="nome_id" placeholder="Primeiro e último nome" maxlength="25">
+                <br>-->
+                <label for="email_id">Email:</label>
+                <input type="text" name="email" id="email_id" placeholder="O seu endereço eletrónico" maxlength="40">
+                <br>
+                <label for="pais_id">Selecione a opção desejada:</label>
+                <br>
+                <br>
+                <select name="pais" id="pais_id">
+                    <option value="pais1">País 1</option>
+                    <option value="pais1">País 2</option>
+                    <option value="pais1">País 3</option>
+                </select>
+            </fieldset>
             <br>
-            <label for="nome_id">Nome:</label>
-            <input type="text" name="nome" id="nome_id" placeholder="Primeiro e último nome" maxlength="25">
+            <input class="submit" type="submit" value="Confirmar">
             <br>
-            <label for="email_id">Email:</label>
-            <input type="text" name="email" id="email_id" placeholder="O seu endereço eletrónico" maxlength="40">
             <br>
-            <label for="pais_id">Selecione a opção desejada:</label>
-            <select name="pais" id="pais_id">
-                <option value="pais1">País 1</option>
-                <option value="pais1">País 2</option>
-                <option value="pais1">País 3</option>
-            </select>
-        </fieldset>
+            <!-- Dados do país escolhido aqui -->
+            <div class="selected_option_card">
+                <div class="data_card">
+                    
+                </div>
+            </div>
         </form>
-
+        <!-- Fim do formulário -->
     </div>
     <!-- Fim Container -->
     <!-- Bottom bar -->
