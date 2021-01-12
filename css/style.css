@@ -77,6 +77,7 @@ input{
 }
 
 select{
+    width: 175px;
     margin-bottom: 25px;
 }
 
@@ -90,7 +91,30 @@ select{
     font-weight: bold;
 }
 
- 
+#total_confirmados{
+    color: grey;
+}
+
+
+#novos_confirmados{
+ color:red;   
+}
+
+#total_recuperados{
+    color: grey;
+}
+
+#novos_recuperados{
+    color: green;
+}
+
+#novos_mortos{
+    color: black;
+}
+
+#total_mortos{
+    color: grey;
+}
 
 /* Fim do card container */
 /* Fim do container */
