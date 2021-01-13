@@ -24,34 +24,40 @@ $(document).ready(function () {
 
     //Variável que armazena a response 
     var settings = {
-        "url": "https://api.covid19api.com/",
+        "url": "https://api.covid19api.com/summary",
         "method": "GET",
         "timeout": 0,
     };
 
-    //função que lê a response
+    //Preenche a select list
     $.ajax(settings).done(function (response) {
-        console.log(response);
-    });
+        var content = response.Countries;
 
-    //função que executa ao mudar de opção
+        for (var i = 0; i < content.length; i++) {
+            var row = content[i];
+            $('#pais_id').append('<option value="' + row.Slug + '">' + row.Country + '</option>')
+        }
+    });
+    //função que executa ao mudar de país na página newsletter
     $(document).on('change', 'select', function () {
-        console.log($(this).val());
+        var dd = $(this).val();
+        //Preenche os campos pelo id
         $.ajax(settings).done(function (response) {
-            console.log(response);
+            var content = response.Countries;
+            console.log(content[1].Country);
+            for (var i = 0; i < content.length; i++) {
+                var row = content[i]
+
+                if (row.Slug == dd) {
+                    $("#nome_pais").text(row.Country);
+                    $("#total_confirmados").text(row.TotalConfirmed);
+                    $("#novos_confirmados").text(row.NewConfirmed);
+                    $("#total_recuperados").text(row.TotalRecovered);
+                    $("#novos_recuperados").text(row.NewRecovered);
+                    $("#total_mortos").text(row.TotalDeaths);
+                    $("#novos_mortos").text(row.NewDeaths);
+                }
+            }
         });
-
-        $("#nome_pais").text($(this).val());
-        $("#total_confirmados").text($(this).val());
-        $("#novos_confirmados").text($(this).val());
-        $("#total_recuperados").text($(this).val());
-        $("#novos_recuperados").text($(this).val());
-        $("#total_mortos").text($(this).val());
-        $("#novos_mortos").text($(this).val());
     });
-
-    $(".submit").on("click", function () {
-
-    })
-
 });
