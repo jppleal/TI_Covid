@@ -80,6 +80,9 @@ select{
     width: 175px;
     margin-bottom: 25px;
 }
+option{
+    width: 175px;
+}
 
 /* Card container */
 
@@ -91,6 +94,12 @@ select{
     font-weight: bold;
 }
 
+#nome_pais{
+    min-width: 100px;
+}
+.tabela_conf{
+    width: 125px;
+}
 #total_confirmados{
     color: grey;
 }

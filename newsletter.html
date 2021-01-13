@@ -20,6 +20,7 @@
 
     <!-- main.js import -->
     <script src="js/main.js"></script>
+    <script src="js/newsletter.js"></script>
 </head>
 
 <body>
@@ -57,7 +58,7 @@
                 <br>
                 <br>
                 <select name="pais" id="pais_id">
-
+                    <option value="default">-----Escolha um país-----</option>
                 </select>
             </fieldset>
             <br>
@@ -66,26 +67,26 @@
             <br>
             <!-- Dados do país escolhido aqui -->
             <div class="selected_option_card">
-                <div class="data_card">
+                <div class="card">
                     <table class="table_card">
-                        <tr class="table_row">
+                        <tr class="table_row1">
                             <th class="titulos_tabela">País</th>
                             <th id="nome_pais">nome_país</th>
                         </tr>
                         <tr class="table_row">
                             <th class="tabela_conf">Confirmados</th>
-                            <th id="total_confirmados">000000</th>
-                            <th id="novos_confirmados">(+000000)</th>
+                            <th id="total_confirmados"></th>
+                            <th id="novos_confirmados"></th>
                         </tr>
                         <tr class="table_row">
                             <th class="tabela_recup">Recuperados</th>
-                            <th id="total_recuperados">000000</th>
-                            <th id="novos_recuperados">(+000000)</th>
+                            <th id="total_recuperados"></th>
+                            <th id="novos_recuperados"></th>
                         </tr>
                         <tr class="table_row">
                             <th class="tabela_mortos">Mortos</th>
-                            <th id="total_mortos">000000</th>
-                            <th id="novos_mortos">(+000000)</th>
+                            <th id="total_mortos"></th>
+                            <th id="novos_mortos"></th>
                         </tr>
                     </table>
                 </div>
