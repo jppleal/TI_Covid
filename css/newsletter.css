@@ -1,0 +1,80 @@
+/* Container */
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.container h1 {
+    font-size: 50px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.container_text h4 {
+    font-weight: normal;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 175px;
+    margin-bottom: 25px;
+}
+
+option {
+    width: 175px;
+}
+
+
+/* Card container */
+
+.table_card {
+    text-align: center;
+    width: 100%;
+}
+
+.titulos_tabela {
+    font-weight: bold;
+}
+
+#nome_pais {
+    min-width: 100px;
+}
+
+.tabela_conf {
+    width: 125px;
+}
+
+#total_confirmados {
+    color: grey;
+    font-weight: bold;
+}
+
+#novos_confirmados {
+    color: red;
+    font-weight: bold;
+}
+
+#total_recuperados {
+    color: grey;
+    font-weight: bold;
+}
+
+#novos_recuperados {
+    color: green;
+    font-weight: bold;
+}
+
+#novos_mortos {
+    color: black;
+    font-weight: bold;
+}
+
+#total_mortos {
+    color: grey;
+    font-weight: bold;
+}
