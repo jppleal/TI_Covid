@@ -101,16 +101,40 @@ option {
 .table_lista_paises {
     text-align: center;
     width: 100%;
+    margin-right: 20px;
+}
+
+.table_row1 {
+    height: 40px;
+    max-height: 45px;
+}
+
+.tabela_pais {
+    width: 30%;
+}
+
+#nome_pais {
+    width: 200px;
+}
+
+.tabela_conf {
+    width: 30%;
 }
 
 #lista_total_confirmados {
     color: grey;
     font-weight: bold;
+    width: 35%;
 }
 
 #lista_novos_confirmados {
     color: red;
     font-weight: bold;
+    width: 35%;
+}
+
+.tabela_recup {
+    width: 30%;
 }
 
 #lista_total_recuperados {
