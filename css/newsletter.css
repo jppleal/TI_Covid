@@ -85,9 +85,10 @@ option {
 @media only screen and (min-width: 720px) {
     .container h1 {
         margin-bottom: 0px;
+        margin-top: 20px;
     }
     fieldset {
-        height: 190px;
+        height: 150px;
     }
     input {
         margin-bottom: 10px;
