@@ -156,3 +156,14 @@ option {
     color: grey;
     font-weight: bold;
 }
+
+
+/* Versão desktop */
+
+@media only screen and (min-width:720px) {
+    .table_lista_paises {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+}

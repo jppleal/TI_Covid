@@ -21,7 +21,7 @@ input {
 }
 
 select {
-    width: 175px;
+    width: 190px;
     margin-bottom: 25px;
 }
 
@@ -77,4 +77,24 @@ option {
 #total_mortos {
     color: grey;
     font-weight: bold;
+}
+
+
+/* versão desktop */
+
+@media only screen and (min-width: 720px) {
+    .container h1 {
+        margin-bottom: 0px;
+    }
+    fieldset {
+        height: 190px;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    .selected_option_card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 60%;
+    }
 }
